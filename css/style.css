@@ -151,14 +151,27 @@
 /* <!-- Esercizio 12 --> */
 
 .ex-12-button:hover .ex-12-top-white{
-  animation: topline 2s linear;
+  animation: topline 1s linear;
 }
 
 @keyframes topline{
   0% {left: 10%;}
-  50% {left: calc(100% - 60px);}
+  50% {left: 60%;}
   100% {left: 10%;}
 } 
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: bottomline 1s linear;
+}
+
+@keyframes bottomline{
+  0% {right: 20%;}
+  50% {right: 60%;}
+  100% {right: 20%;}
+} 
+
+
+/* <!-- Esercizio 13 --> */
 
 
 .ex-13-button:hover .ex-13-top-white{
@@ -166,7 +179,54 @@
 }
 
 @keyframes topline2{
-  0% {left: 10%;}
-  50% {left: 50%;}
-  100% {left: 10%;}
+  0% {left: 10%;
+      top: -10px;
+      right: 90%}
+  30% {left: 100%;
+       top: -10px;
+       right: -5%}
+  40% {left: 100%;
+        top: 55px;
+        right: -5%;}
+  70% {left: -5%;
+        top: 55px;
+        right: 100%;}    
+  95%  {left: -5;
+        top: -10px;
+        right: 100%;}  
+  100% {left: -5%;
+        top: -10px;
+        right: 90%;}            
+} 
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: bottomline2 2s linear;
+}
+
+@keyframes bottomline2{
+  0% {right: 20%;
+      bottom: -10px;
+      left: 80%;}
+  30% {right: 100%;
+       bottom: -10px;
+       left: -5%;
+      }
+  40% {right: 100%;
+       bottom: 55px;
+       left: -5%;
+       }
+  70% {right:0%;
+       bottom: 55px;
+       left: 100%;
+      }
+  95% {right: 0;
+      bottom: -10px;
+      left: 100%;
+
+  } 
+  100%{right: 20%;
+       bottom: -10px;
+       left: 80%;
+
+  }   
 } 
